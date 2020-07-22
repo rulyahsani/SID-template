@@ -1,0 +1,38 @@
+#sec1 {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#sec1 .container {
+  padding: 50px auto;
+}
+#sec1 .card img {
+  /*position: absolute;*/
+  text-align: center;
+  /*margin: 30px auto;*/
+  margin-left: 40px auto;
+  /*height: 40px;*/
+  color: red;
+  width: 100%;
+  height: 150px;
+  /*line-height: 40px;*/
+}
+
+#sec1 .card-title {
+  margin-top: -20px;
+}
+#sec1 .card {
+  max-width: 55rem;
+  background: #CECED8;
+
+
+}
+
+#sec1 .leftbar {
+  background: #ffffff;
+  padding: 20px auto;
+}
+
+#sec1 .card-form {
+    background: #fff;
+}

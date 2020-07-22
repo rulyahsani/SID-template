@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+	outline: none !important;
+	scroll-behavior: smooth;
+	transition: .5s;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	position: relative;
+	z-index: 1000000;
+}
+p {
+	font-size: 1.15rem;
+}
+
+.navbar {
+	background: transparent !important;
+	transition: 0.5s;
+}
+
+.navbar.scrolled {
+	background: #000 !important;
+	transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #000;
+    background: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover {
+	color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+	color: rgba(255,255,255,1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+ {
+    color: rgba(255,255,255,1);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: #fff center center;
+    background-size: 100% 100%;
+
+}
+
+.banner {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: url(../image/slide2.jpg);
+	background-size: cover;
+}
+
+.banner:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background: linear-gradient(#000, transparent);
+	pointer-events: none;
+}
+
+.banner:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background: linear-gradient(360deg,#000, transparent);
+	pointer-events: none;
+	
+}
+
+.height100p {
+	height: 100vh;
+}
+.h100 {
+	height: 100%;
+}
+.contentBox {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.contentBox h1 {
+	font-weight: 800;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+.contentBox p {
+	color: #fff;
+	font-size: 1.3rem;
+}
+
+.sec1 {
+	padding: 30px 0;
+	background: #fff;
+}
+
+.sec1 .headerText h2 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+
+}
+.sec1 .placeBox {
+	position: relative;
+	max-width: 300px;
+	height: 400px;
+	margin: 0 auto;
+	background: #000;
+	margin-top: 30px;
+}
+
+.sec1 .placeBox .imgBox {
+	width: 100%;
+	height: 100%;
+}
+.sec1 .placeBox .imgBox img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+}
+.sec1 .placeBox .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: baseline;
+	align-items: flex-end;
+
+}
+
+.sec1 .placeBox .content h3 {
+
+	position: relative;
+	margin: 0;
+	padding: 10px;
+	background: rgba(0,0,0,.95);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+
+.sec1 .placeBox .content h3 span {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.sec2 {
+	padding: 30px;
+	background: #000;
+	/*height: 400px;*/
+}
+
+.sec2 .container h2 {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+
+}
+.sec2 .container p {
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+.sec2 .contentBox p {
+	font-size: 16px;
+}
+
+.sec2 .contentBox h3 {
+	font-size: 30px;
+	color: #fff;
+}
+
+.sec4 {
+	padding: 30px;
+	width: 100%;
+
+}
+
+.sec4 .blog-content {
+	width: 100%;
+
+}
+.sec4 .blog-content h3 {
+	text-align: center;
+	font-size: 30px;
+}
+.sec4 .blog-content p {
+	text-align: justify;
+	font-size: 18px;
+}
+
+.sec4 .blog-content a {
+	margin: 50px auto;
+}
+
+.sec5 {
+	padding: 30px;
+	background: #000;
+}
+
+.sec5 .sosmed h3 {
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+}
+.footer {
+	margin-top: 30px;
+}
+.footer .sci {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer .sci ul {
+	padding: 50px;
+}
+.footer .sci ul li {
+	list-style: none;
+	margin: 0 50px;
+	
+}
+.footer .sci ul li a {
+	color: #777;
+	font-size: 2em;
+	transition: 0.5s;
+
+}
+
+.footer h4 {
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+	color: #000;
+}
+
+@media (min-width: 992px) {
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+	}
+}
+
+@media (max-width: 992px) {
+
+.navbar-light .navbar-toggler {
+    background: #fff;
+    border-radius: 0;
+	}
+	.banner {
+		min-height: 100vh;
+		padding: 100px 0;
+	}
+	.contentBox h1, .sec1 h2 {
+		font-size: 1.5rem;
+	}
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+	}
+	 .sec1 {
+	 	padding: 20px 0;
+
+	 }
+	 .sec1 .headerText h2 {
+    font-size: 2rem;
+    
+}
+	p {
+    font-size: 1.2rem;
+}
+
+.sec1 .placeBox {
+    position: relative;
+    max-width: 250px;
+    height: 300px;
+    margin: 0 auto;
+    background: #000;
+    margin-top: 30px;
+}
+}
